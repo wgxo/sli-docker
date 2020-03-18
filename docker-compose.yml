@@ -1,0 +1,14 @@
+version: '3'
+services:
+  tools:
+    build:
+      context: .
+    ports:
+     - "80:80"
+    volumes:
+     - ./slisys-environment-setup:/home/slisys
+    environment:
+     - XDEBUG_CONFIG="idekey=PHPSTORM remote_host=predator remote_autostart=1 remote_enable=1"
+    extra_hosts:
+     - "predator:192.168.108.132"
+     - "tools.xo.local:127.0.0.1"
