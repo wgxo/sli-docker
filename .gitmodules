@@ -1,3 +1,4 @@
 [submodule "slisys-environment-setup"]
 	path = slisys-environment-setup
 	url = git@github.com:trilogy-group/slisys-environment-setup.git
+  branch = master
